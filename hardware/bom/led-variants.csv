@@ -1,0 +1,21 @@
+Product Code,,half angle,I-max mA,"Vf @1A, 25°C",Wavelength,Radiant Flux @1A,Notes/URLs
+Infrared 800 - 1200nm,,,,,,,Not used in original design.
+SFH 4725S,,40,1A,2.7,945,500 - 1280 mW/sr,
+SFH 4775S,,60,1.5,2.7,945,900-1800 mW/sr,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+White,CRI for Listed Ratings,,,,Warmth,Lumens @ 25°C,
+XLamp XP-G2,90 CRI,60,1500,2.9,2700-3000K,<360,
+"XLamp XP-G2, High Efficacy",90 CRI,65,2000,3,2700-6200K,<315,
+"DURIS® S 8, GW P9LT31.CM",95+,60,1800,2.9,2700-4000K,<315,
+XPGBWT-UE-0000-00GE2,90 CRI,60,1500,,5700K,143,
+XPGBWT-UE-0000-00DE4,90 CRI,60,1500,,4500K,118,
+XPGBWT-UE-0000-00CE8,90 CRI,60,1500,,2700K,110,
+XPGBWT-UE-0000-00DE5,90 CRI,60,1500,,4000K,118,
+XPGBWT-UE-0000-00CF6,90 CRI,60,1500,,3750K,110,
+ XPGBWT-L1-0000-00GE3,75 CRI,60,1500,,5000K,143,Used in original design.
+,,,,,,,
+,,,,,,,
+Ultra-Violet 315 - 400nm (UV-A),,,,,,,
+ Luminus SST-10-UV-A130-E365-00,,,500,,385+,1.62mW,"Flux is in Radiometric Flux, see Datasheet for more info. Used in original design."

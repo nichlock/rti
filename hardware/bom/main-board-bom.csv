@@ -1,0 +1,39 @@
+Part,Info,#,CPU at quantity*,Line cost,Mouser P/N,Digikey P/N,MFR ID,Notes,Optional?
+Passive Components,,100,,14.636,,,,,
+Resistors,10k,64,0.069,4.416,71-CRCW080510K0FKEAC,,CRCW080510K0FKEAC,Used on mosfets,
+,560R,4,0.1,0.4,71-CRCW0805560RJNEB,,CRCW0805560RJNEB,CAT4101 Adjustment Resistors AND one 12v LED current limit resistor,
+,175R,4,0.1,0.4,71-CRCW0805-178-E3,,CRCW0805178RFKEA,5v LED current limit resistors,
+,60R,3,0.1,0.3,71-CRCW080556R0JNEA,,CRCW080556R0JNEA,H11L1MS Protection Resistors,
+Resettable SMD fuses,3.5A - 4A,0,0.57,0,,RGEF400HF-ND,RGEF400,Main fuse,"Not used in design, but it is still an option. Item not included in final price or component count."
+,1.1A,3,0.27,0.81,530-0ZCG0110CF2B,,0ZCG0110CF2B,CAT4101 channel fuses,
+Power Capacitor C7,100uF,1,2.97,2.97,,493-4561-1-ND,PCV1J270MCL7GS,"Decoupling cap, needed for long power cables.",Use if power cables are long as it will dampen the effect of a sudden supply or voltage drop.
+Capacitors,.1uF,7,0.1,0.7,,1276-1007-1-ND,CL21F104ZBCNNNC,"CAT4101, 7805, and H11L1MS decoupling capacitors",Three capacitor allocated to H11L1MS decoupling are only needed it is used. One capacitor is for the 7805 regulator.
+,.33uF,1,0.22,0.22,,1276-6813-1-ND,CL21B334KBFVPNE,5V linear regulator cap,Only purchase if 7805 is used.
+LEDs,,4,0.34,1.36,,160-1456-1-ND,LTST-C230KGKT,Power Supply Indicator LEDs,Optional. Useful for troubleshooting.
+,,9,0.34,3.06,,160-1456-1-ND,LTST-C230KGKT,Active color and position indicator LEDs,Optional. Useful for troubleshooting.
+Active Coponents,,47,,31.9,,,,,
+N-mosfets,,24,0.46,11.04,726-BSS306NH6327XTSA,,BSS306NH6327XT,Cathode driver mosfets,
+P-mosfets,,8,0.76,6.08,781-SI2319DS-GE3,,SI2319DS-T1-GE3,Anode driver mosfets,
+NPN transistors,,8,0.11,0.88,863-BC849BLT1G,,BC849BLT1G,Used to control P-mosfets,
+CAT4101,,3,3.21,9.63,698-CAT4101TV-T75,,CAT4101TV-T75,LED constant current driver,
+7805 Linear Regulator,,1,0.58,0.58,863-NCV7805BDTRKG,,NCV7805BDTRKG,5v linear regulator,Optional if a built in linear 5V power supply is needed. Required if a 5v supply is not provided.
+H11L1MS,,3,1.23,3.69,,H11L1SR2MCT-ND,H11L1SR2M,Opto-isolated shutter controls,"Not always needed, but don't skip out on it unless you have a specific reason. Not having these could lead to some costly mistakes!"
+Connectors,,11,,7.53,,,,,
+ATX 8 pin male,"2R, 8P",4,1.08,4.32,571-1775099-5 (cheaper alt.),WM17748-ND,39-30-6087,Connects to LEDs,
+Barrel Jack,2.1mm,1,1.15,1.15,,CP-006APJCT-ND,PJ-006A-SMT-TR,"Power supply connector, rated up to 4A.",
+Male Headers,24 pos,2,0.46,0.92,,S1012EC-24-ND,PREC024SAAN-RC,"Break headers up into 3 twos, 3 eights, a four, a five, and a six.",
+Dual Row Male Headers,2R 36P,1,,0,,,,For Arduino MEGA conection,
+Female Headers,3 pos,3,0.38,1.14,,,,For use with H11L1MS output.,
+Total for circuit board,,158,,54.066,,,,,
+External Parts,,301,,38.1216,,,,,
+Inline tap wire connector,,256,0.1288,32.9728,,WM18735-ND,19216-0003,Used to branch out hookup wire on the dome.,"These are the easiest and cheapest solution we found. If time is not an issue, the wires could be soldered at virtually no monetary cost."
+Crimp-on female ATX pins,,32,0.1034,3.3088,538-43030-0038,WM13070CT-ND,430300038,Inserted into ATX 8-pin female housings,"If the ATX 8 pin male connectors aren't used on the circuit board, it is not needed."
+ATX 8 pin female housings,,4,0.46,1.84,,WM16167-ND,469920810,Plugs into circuit board,"If the ATX 8 pin male connectors aren't used on the circuit board, it is not needed."
+Standoffs - Not included,,3,,?,,,,Standoffs can be found at a hardware store and may be cheaper there.,
+Screws - Not included,,6,,?,,,,Screws can be found at a hardware store and may be cheaper there.,
+VGA Cable,,1,,,,,,Used to connect display to main board,
+VGA Connectors - Male,,2,,,,,,As above.,
+,,,,,,,,,
+"Total Electrical, w/o LED parts",,459,,92.1876,,,,,
+,,,,,,,,,
+*Price determined at time of purchase of original prototype purchase.,,,,,,,,,
