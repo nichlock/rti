@@ -1,5 +1,7 @@
 # RTI
-My work towards the software and hardware components of a Reflectance Transformation Imager for George Washington University.
+Design files and released for the software, hardware and physical construction of a Reflectance Transformation Imager for George Washington University.
+
+TODO: main image
 
 Further documentation, other than that directly in design files, can be found in the `docs` directory. For a high-level intoduction, see [About the System](#about-the-system)
 
