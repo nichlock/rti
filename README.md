@@ -19,3 +19,7 @@ This repository contains our implmentation of that design, including:
 3. The GUI within the above program, which enables easy control over the whole system. Contains options for different patterns, speeds, LED configurations, camera shutter controls, and general settings.
 
 # About the System
+
+Our device is comprised of three major parts: the dome's physical construction, the driver board, and the code.
+
+The dome itself is
