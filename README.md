@@ -31,7 +31,7 @@ We had a number of requirements of our boards. The driver board needed three sep
 
 ### Driver Board
 
-([Schematic](hardware/arduino-sheild/MEGA_shield_SCHEMATIC.pdf), [further documentation](docs/driver-board.md))
+(See [Schematic](hardware/arduino-sheild/MEGA_shield_SCHEMATIC.pdf), [further documentation](docs/driver-board.md))
 
 Since not all LED colors will operate at similar amperages, we needed three constant-current drivers on one board. Beyond that, we wanted robust connectors that would handle the maximum voltages and currents our system might see, and isolated camera triggers. For all these needs, we created a custom driver board. This driver board was implemented as a shield for an Arduino Mega.
 
@@ -39,15 +39,38 @@ TODO: image
 
 ### LED Board
 
-([Schematic](hardware/led-board/LEDBoard_SCHEMATIC.pdf), [further documentation](docs/led-board.md))
+(See [Schematic](hardware/led-board/LEDBoard_SCHEMATIC.pdf), [further documentation](docs/led-board.md))
 
 The three LEDs needed to be mounted on the dome on a board that would sink much of their heat. For this, I designed another circtuit board around the same size as the common [star shaped boards](https://www.adafruit.com/product/518), but capable of holding three LEDs in a common-anode configuration, just like 4-lead RGB LEDs. Electrically, this is very simple; the only challenges were in thermal considerations and creating a robust mounting and wiring design.
 
 TODO: images of board, wired and non-wired
 
-
-In the above image, you can see a hole in the middle of the board. This is there to wire the LED through the plastic tube that was used to mount it. 
-
 These board were not designed for long-term use, and will get very hot after a little while without any active cooling, so try not to run any one LED over 20 seconds.
 
 ## Code and GUI
+
+The code for this design was created with the goal of having an inuitive GUI for users who would be primarily non-technical. The capabilities of the code include:
+
+- A multi-page GUI
+- Running 'patterns' on the LEDs on the dome with these customizations:
+  - Pattern types: 'All Column' Scans (goes through each LED, moving down columns first), 'All Rings' Scans, Individual Rings, and Individual Columns.
+  - Skipping a certain ammount LEDs to run faster scans, while keeping the LED locations balanced (ex. running every other LED)
+  - On-time
+  - Off-time
+- A 'profile' system for above settings, stored in non-volotile memory. 
+  - Allows the user to pick a profile and run immediately when choosing the above settings.
+  - Three profiles for each individual scan type, 12 total.
+  - Custom names (see below)
+- 'Usable' LED configurations, stored in non-volotile memory.
+  - Stores the three LED array configurations, so that if only half an array is actually populated, the system knows about the missing LEDs and can account for them when running scans.
+- Shutter controls, stored in non-volotile memory.
+  - Multiple settings: delay time before triggering, Active level for shutter (high/low), on time
+  - 8 shutter profiles for storing shutter settings, similar to the LED settings profiles above.
+  - Custom names (see below)
+- Non-volotile storage for all convinience settings, including:
+  - Serial baud rate
+  - Default color channels
+  - Touch position calibration
+  - Diagnostics mode
+  - Linkable shutters, allowing for all colors to trigger all shutters, instead of individual channel shutters.
+- Custom names for all above profiles and for channel colors, set with a GUI touch keyboard so the user doesen't need additional parts.
