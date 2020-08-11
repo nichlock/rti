@@ -57,19 +57,19 @@ The code for this design was created with the goal of having an inuitive GUI for
   - Skipping a certain ammount LEDs to run faster scans, while keeping the LED locations balanced (ex. running every other LED)
   - On-time
   - Off-time
-- A 'profile' system for above settings, stored in non-volotile memory. 
+- A 'profile' system for above settings, stored in non-volatile memory. 
   - Allows the user to pick a profile and run immediately when choosing the above settings.
   - Three profiles for each individual scan type, 12 total.
   - Custom names (see below)
-- 'Usable' LED configurations, stored in non-volotile memory.
+- 'Usable' LED configurations, stored in non-volatile memory.
   - Stores the three LED array configurations, so that if only half an array is actually populated, the system knows about the missing LEDs and can account for them when running scans.
-- Shutter controls, stored in non-volotile memory.
+- Shutter controls, stored in non-volatile memory.
   - Multiple settings: delay time before triggering, Active level for shutter (high/low), on time
   - 8 shutter profiles for storing shutter settings, similar to the LED settings profiles above.
   - Custom names (see below)
-- Non-volotile storage for all convinience settings, including:
+- Non-volatile storage for all convenience settings, including:
   - Serial baud rate
-  - Default color channels
+  - Default color channel
   - Touch position calibration
   - Diagnostics mode
   - Linkable shutters, allowing for all colors to trigger all shutters, instead of individual channel shutters.
