@@ -49,6 +49,7 @@ These board were not designed for long-term use, and will get very hot after a l
 
 ## Code and GUI
 
+(See [further documentation](docs/code.md))
 The code for this design was created with the goal of having an inuitive GUI for users who would be primarily non-technical. The capabilities of the code include:
 
 - A multi-page GUI
