@@ -27,9 +27,11 @@ Our device is comprised of three major parts: the dome's physical construction, 
 ## Construction
 The dome itself is (TODO)
 
-## Circuit Boards
+## Hardware
 
-We had a number of requirements of our boards. The driver board needed three seperate 1A channels which could drive 64 LEDs each, which would have an isolated system to trigger a camera shutter. The LED boards had to both sink the 5W of poer from the LEDs and contain three sperated colors. Since these aren't common requirements for consumer-level prototype boards, we designed custom circuit boards for this solution. These are the two custom boards designed for that purpose.
+We had a number of requirements of our circuit boards. The driver board needed three seperate 1A channels which could drive 64 LEDs each, which would have an isolated system to trigger a camera shutter. The LED boards had to both sink the 5W of poer from the LEDs and contain three sperated colors. Since these aren't common requirements for consumer-level prototype boards, we designed custom circuit boards for this solution. 
+
+In addition, we had to wire the dome for all 192 LEDs with wiring that was modifiable but that would not comprimise the lighting much. All of that had to fit in a robust and consice form-factor.
 
 ### Driver Board
 
@@ -48,6 +50,12 @@ The three LEDs needed to be mounted on the dome on a board that would sink much 
 TODO: images of board, wired and non-wired
 
 These board were not designed for long-term use, and will get very hot after a little while without any active cooling, so try not to run any one LED over 20 seconds.
+
+### Wiring
+
+(See [Schematic](hardware/led-board/array-schematic.pdf), [further documentation](docs/led-array.md))
+
+For our wiring, we chose to create a typical 3-color LED array, common in electronics in the form of RGB arrays (LED displays typically use these). While there are other configurations with lesser hardware requirements, they get extremely complex in wiring and driving, making maintenance more difficult.
 
 ## Code and GUI
 
