@@ -2,7 +2,7 @@
 
 Design files and released for the software, hardware and physical construction of a Reflectance Transformation Imager for George Washington University.
 
-For information on the system, construction, and other details, see [our Wiki](https://github.com/nichlock/rti/wiki).
+For information on the contents of the system, see [our Wiki](https://github.com/nichlock/rti/wiki). For more on the build and usage, [see the docs folder](../../tree/master/docs).
 
 This repository contains our RTI's hardware and software implementation, and includes the source and documentation for:
 1. A custom designed Arduino Mega shield to control the dome, which powers a three-color LED matrix and triggers the cameras.
