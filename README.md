@@ -4,6 +4,4 @@ Design files and released for the software, hardware and physical construction o
 
 For information on the system, construction, and other details, see [our Wiki](https://github.com/nichlock/rti/wiki).
 
-TODO: Short description
-
-TODO: Picture of system
+![Image of the main dome](../../blob/master/images/dome/fully-wired.jpg)
