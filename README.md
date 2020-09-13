@@ -1,6 +1,6 @@
 # Open Source RTI
 
-Design files and released for the software, hardware and physical construction of a Reflectance Transformation Imager for George Washington University.
+Source for the software, hardware and physical construction of a Reflectance Transformation Imager for George Washington University.
 
 For information on the contents of the system, see [our Wiki](https://github.com/nichlock/rti/wiki). For more on the build and usage, [see the docs folder](../../tree/master/docs).
 
