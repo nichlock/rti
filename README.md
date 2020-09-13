@@ -11,3 +11,5 @@ This repository contains our RTI's hardware and software implementation, and inc
 4. The GUI within the above program, which enables easy control over the whole system with no need for technical knowledge. See more about the GUI on our [system overview page](https://github.com/nichlock/rti/wiki/About-the-System#software-and-gui).
 
 ![Image of the main dome](../../blob/master/images/dome/fully-wired.jpg)
+
+![Image of the software's home screen.](../../blob/master/docs/start-up-screen.jpg)
